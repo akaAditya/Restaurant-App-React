@@ -1,0 +1,12 @@
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(138, 51, 17, 0.89);
+}
+
+h3{
+    padding-left: 50px;
+    color: antiquewhite;
+}

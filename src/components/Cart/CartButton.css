@@ -1,0 +1,25 @@
+.btn{
+  padding-right: 40px; 
+  padding-top: 20px; 
+
+}
+
+.btn button{
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: rgba(94, 33, 9, 0.89);;
+    border: none;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    cursor: pointer;
+}
+span{
+    background-color: rgba(211, 78, 16, 0.973);
+    padding: 4px 15px;
+    border-radius: 10px;
+}
