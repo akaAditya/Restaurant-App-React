@@ -1,0 +1,23 @@
+.meals{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.meals-name{
+    color: brown;
+    font-weight: 700;
+}
+
+.meals-desc{
+    font-style: italic;
+}
+
+.meals-price{
+    color: rgb(145, 98, 11);
+}
