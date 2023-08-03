@@ -9,10 +9,10 @@ const AddMeals = () => {
   return (
     <div>
       <div className="right-side-meals">
-        <div className="amount-quantity">
-          <span className="amount">Amount</span>
-          <span className="meals-quantity">{quantity}</span>
-        </div>
+        <form className="amount-quantity">
+          <label className="amount">Amount</label>
+          <input className="meals-quantity" min='1' max='5' defaultValue='1' value={quantity}/>
+        </form>
           <button className="add-button" onClick={addQuantityHandler}>+Add</button>
       </div>
     </div>
