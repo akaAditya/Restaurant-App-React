@@ -4,7 +4,7 @@
 
 }
 
-.btn button{
+.btn-cart{
     border-radius: 10px;
     width: 200px;
     height: 30px;
@@ -18,7 +18,7 @@
     padding-right: 30px;
     cursor: pointer;
 }
-span{
+.span-count{
     background-color: rgba(211, 78, 16, 0.973);
     padding: 4px 15px;
     border-radius: 10px;

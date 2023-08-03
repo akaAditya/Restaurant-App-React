@@ -1,5 +1,6 @@
 import React from "react";
 import "./Meals.css";
+import AddMeals from "./AddMeals";
 const Meals = () => {
   const mealsList = [
     {
@@ -30,9 +31,16 @@ const Meals = () => {
           {mealsList.map((meal) => {
             return (
               <>
-                <div className="meals-name">{[meal.name]}</div>
-                <div className="meals-desc">{[meal.description]}</div>
-                <div className="meals-price">{[meal.price]}</div>
+                <div className="meals-and-button">
+                  <div>
+                    <div className="meals-name">{[meal.name]}</div>
+                    <div className="meals-desc">{[meal.description]}</div>
+                    <div className="meals-price">{[meal.price]}</div>
+                  </div>
+                  <div>
+                    <AddMeals />
+                  </div>
+                </div>
                 <hr />
               </>
             );

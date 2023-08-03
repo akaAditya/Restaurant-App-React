@@ -8,7 +8,7 @@ const CartButton = () => {
   return (
     <div>
     <div className='btn'>
-        <button>Your Cart <span>{count}</span></button>
+        <button className='btn-cart'>Your Cart <span className='span-count'>{count}</span></button>
     </div>
     </div>
   )

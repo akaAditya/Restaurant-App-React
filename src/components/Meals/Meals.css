@@ -21,3 +21,8 @@
 .meals-price{
     color: rgb(145, 98, 11);
 }
+
+.meals-and-button{
+    display: flex;
+    justify-content: space-between;
+}
