@@ -1,30 +1,28 @@
-import React, { Fragment, useState } from "react";
-import Navbar from "./components/Layout/Navbar";
-import Summary from "./components/Layout/Summary";
-import Meals from "./components/Meals/Meals";
-import Cart from "./components/Cart/Cart";
+import React, { useState } from 'react';
+
+import Header from './components/Layout/Header';
+import Meals from './components/Meals/Meals';
+import Cart from './components/Cart/Cart';
+import CartProvider from './components/store/CartProvider';
 
 function App() {
-  const [showCart, setShowCart] = useState(false);
+  const [isItemShow, setIsItemShow] = useState(false)
 
-  const showCartHandler = ()=>{
-    setShowCart(true)
+  const showCartItemHandler = () =>{
+    setIsItemShow(true)
   }
 
-  const hideCartHandler = ()=>{
-    setShowCart(false)
+  const hideCartItemHandler = () =>{
+    setIsItemShow(false)
   }
   return (
-    <Fragment>
-      {showCart && <Cart onCloseCart={hideCartHandler}/>}
-      <header>
-        <Navbar onShowCart={showCartHandler}/>
-      </header>
+    <CartProvider>
+      {isItemShow && <Cart onClose={hideCartItemHandler}/>}
+      <Header onShowCart={showCartItemHandler}/>
       <main>
-        <Summary />
         <Meals />
       </main>
-    </Fragment>
+    </CartProvider>
   );
 }
 
